@@ -17,20 +17,19 @@ public class GeneralHelpManager {
 
     // Constructors
     public GeneralHelpManager() {
-        final URL helpURL = HelpManager.getHelpURL();
-        this.hv = new HTMLHelpViewer(helpURL);
-        this.helpFrame = new JFrame("DynamicDungeon Help");
-        this.helpFrame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
-        this.helpFrame.setLayout(new FlowLayout());
-        this.helpFrame.add(this.hv.getHelp());
-        this.hv.setHelpSize(ImageTransformer.MAX_WINDOW_SIZE,
-                ImageTransformer.MAX_WINDOW_SIZE);
-        this.helpFrame.pack();
-        this.helpFrame.setResizable(false);
+	final URL helpURL = HelpManager.getHelpURL();
+	this.hv = new HTMLHelpViewer(helpURL);
+	this.helpFrame = new JFrame("DynamicDungeon Help");
+	this.helpFrame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+	this.helpFrame.setLayout(new FlowLayout());
+	this.helpFrame.add(this.hv.getHelp());
+	this.hv.setHelpSize(ImageTransformer.MAX_WINDOW_SIZE, ImageTransformer.MAX_WINDOW_SIZE);
+	this.helpFrame.pack();
+	this.helpFrame.setResizable(false);
     }
 
     // Methods
     public void showHelp() {
-        this.helpFrame.setVisible(true);
+	this.helpFrame.setVisible(true);
     }
 }

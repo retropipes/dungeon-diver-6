@@ -6,5 +6,6 @@ Any questions should be directed to the author via email at: products@puttysoftw
 package net.dynamicdungeon.dynamicdungeon.battle;
 
 public enum BattleTarget {
-    SELF, ENEMY;
+    SELF,
+    ENEMY;
 }
